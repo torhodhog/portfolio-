@@ -22,8 +22,15 @@ const Hero = () => {
                {/* text */}
                <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
                <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]" >Web Developer</div>
-               <h1 className="h1">Hello, my name is Torgeir</h1>
-               <p>Brief description with insights into myself, my covational jurney, and what I engage in professionally</p>
+               <h1 className="h1 mb-4">Hello, my name is Torgeir</h1>
+               <p className="subtitle max-w-[490px] max-auto xl:mx-0">Brief description with insights into myself, my covational jurney, and what I engage in professionally</p>
+               {/* buttons */}
+               <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
+                  <Link href='/contact'>
+                  <Button className='gap-x-2'>Contact me <Send size={18}/> </Button>
+                  </Link>
+                  <Button variant='secondary' className='gap-x-2'>Download CV <Download size={18}/> </Button>
+               </div>
                </div>
                {  /* image */}
                <div className="hidden xl:flex relative">image</div>
