@@ -29,8 +29,11 @@ const Hero = () => {
                   <Link href='/contact'>
                   <Button className='gap-x-2'>Contact me <Send size={18}/> </Button>
                   </Link>
-                  <Button variant='secondary' className='gap-x-2'>Download CV <Download size={18}/> </Button>
+                  <Button variant='secondary' className='gap-x-2'>Download CV <Download size={18}/></Button>
                </div>
+               {/*sosials*/}
+               <Socials containerStyles='flex gap-x-6 mx-auto xl:mx-0'/>
+               {/* badges */}
                </div>
                {  /* image */}
                <div className="hidden xl:flex relative">image</div>
