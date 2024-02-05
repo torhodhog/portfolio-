@@ -51,12 +51,12 @@ const qualificationData = [
       {
         university: "Noroff institute of technology and Media",
         qualification: "Back End Developer",
-        years: "2023-2024",
+        years: "2023-present",
       },
       {
         university: "Gokstad Akademiet",
         qualification: "Front End Developer",
-        years: "2023-2025",
+        years: "2023-preset",
       },
     ],
   },
