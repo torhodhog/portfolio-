@@ -127,14 +127,19 @@ const About = () => {
             <div className='flex-1'>
                <Tabs defaultValue='personal'>
                   <TabsList className='w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none'> 
-                     <TabsTrigger value='personal'>Info</TabsTrigger>
-                     <TabsTrigger value='qualifications'>Qualification</TabsTrigger>
-                     <TabsTrigger value='skills'>Skills</TabsTrigger>
+                     <TabsTrigger className='w-[162px] xl:w-auto' value='personal'>Info</TabsTrigger>
+                     <TabsTrigger className='w-[162px] xl:w-auto' value='qualifications'>Qualification</TabsTrigger>
+                     <TabsTrigger className='w-[162px] xl:w-auto' value='skills'>Skills</TabsTrigger>
                   </TabsList>
                   { /* tabs content */}
                   <div className='text-lg mt-12 xl:mt-8'>
                      {/* personal */}
-                     <TabsContent value='personal'>personal info</TabsContent>
+                     <TabsContent value='personal'>
+                        <div>
+                           <h3 className='h3 mb-4'>Unmatched Service Quality for Over 10 years</h3>
+                           <p className='subtitle max-w-xl max-auto xl:mx-0'>I specialize in crafting intuitive websites with cutting-edge technology, delivering dynamic and engaging user experiences.</p>
+                        </div>
+                     </TabsContent>
                      <TabsContent value='qualifications'>qualications info</TabsContent>
                      <TabsContent value='skills'>skills info</TabsContent>
                   </div>
