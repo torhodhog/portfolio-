@@ -1,9 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
-@layer base {
- 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -51,27 +49,27 @@
     --input: 237 22% 20%;
     --ring: 8 99% 67%;
   }
-}
 
-}
- 
-@layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
   }
-}
 
-.h1 {
-  @apply text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold;
-}
+  .h1 {
+    @apply text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold;
+  }
 
-.subtitle{
-  @apply text-muted-foreground text-lg mb-8 font-light;
-}
+  .subtitle{
+    @apply text-muted-foreground text-lg mb-8 font-light;
+  }
 
-.badge{
-  @apply z-10 w-[200px] h-[68px] bg-white dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-[10px] flex items-center gap-x-4;
+  .section-title{
+    @apply text-4xl font-bold relative w-max items-center justify-between gap-x-3 before:bg-dots_light before:dark:bg-dots_dark before:bg-no-repeat before:bg-center before:w-[24px] before:h-[24px]; 
+  }
+
+  .badge{
+    @apply z-10 w-[200px] h-[68px] bg-white dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-[10px] flex items-center gap-x-4;
+  }
 }
